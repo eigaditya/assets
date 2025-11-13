@@ -1,0 +1,140 @@
+:root {
+    --bg:#f1f3f5;
+    --card:#ffffff;
+    --soft:#dcdfe3;
+    --strong:#c2c5c9;
+    --text:#222;
+    --muted:#6c757d;
+    --accent:#4c6ef5;
+    --danger:#d62828;
+    --mono:"JetBrains Mono","SF Mono",monospace;
+    --font:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+body {
+    margin:0;
+    padding:25px 0;
+    background:var(--bg);
+    font-family:var(--font);
+    color:var(--text);
+}
+
+.container {
+    width:960px;
+    margin:auto;
+    background:var(--card);
+    padding:25px 32px;
+    border-radius:12px;
+    border:1px solid var(--soft);
+    box-shadow:0 10px 28px rgba(0,0,0,0.07);
+}
+
+h2 { 
+    margin:0 0 10px;
+    font-size:22px;
+    font-weight:700;
+}
+
+.sys-uname, .sys-ip {
+    font-family:var(--mono);
+    font-size:12px;
+    padding:6px 10px;
+    background:#fff;
+    border:1px solid var(--soft);
+    border-radius:6px;
+    display:inline-block;
+    margin-bottom:6px;
+}
+
+.current-path { margin:8px 0 15px; }
+.current-path span, .current-path a { 
+    font-family:var(--mono); 
+    font-size:13px; 
+}
+
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+.fm-actions {
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin:15px 0;
+}
+.fm-actions form {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:0;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:#fff;
+    border:1px solid var(--soft);
+}
+
+th,td {
+    padding:8px 10px;
+    border-bottom:1px solid var(--soft);
+    font-size:13px;
+}
+
+th {
+    background:#eef0f3;
+    text-transform:uppercase;
+    font-size:11px;
+    letter-spacing:0.06em;
+}
+
+tr:nth-child(even) td { background:#f8f9fa; }
+tr:hover td { background:#f1f3f5; }
+
+textarea {
+    width:100%;
+    height:380px;
+    font-family:var(--mono);
+    font-size:12px;
+    padding:10px;
+    border:1px solid var(--soft);
+    border-radius:8px;
+}
+
+input[type=text],input[type=file]{
+    padding:6px 10px;
+    border:1px solid var(--soft);
+    border-radius:6px;
+    background:#fff;
+    font-size:13px;
+}
+
+button {
+    padding:6px 14px;
+    background:#333;
+    color:#fff;
+    font-size:12px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+button:hover { background:#000; }
+
+.btn-secondary {
+    background:#adb5bd;
+}
+.btn-secondary:hover {
+    background:#868e96;
+}
+
+.viewer {
+    background:#111;
+    color:#eee;
+    padding:15px;
+    border-radius:8px;
+    white-space:pre-wrap;
+    font-family:var(--mono);
+    max-height:75vh;
+    overflow:auto;
+}
