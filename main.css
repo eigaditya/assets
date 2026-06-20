@@ -1,0 +1,270 @@
+/* main.css - untuk MARIJUANA file manager */
+
+/* Import Font Awesome untuk ikon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f0f2f5;
+    color: #1a202c;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .y.x a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header .q.x.w {
+    font-size: 0.9em;
+    letter-spacing: 3px;
+    color: #bdc3c7;
+}
+
+/* ARTIKEL UTAMA */
+article {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Breadcrumb dan info */
+.i {
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.95em;
+}
+
+.i i {
+    margin-right: 6px;
+    color: #4a5568;
+}
+
+.i a {
+    color: #3182ce;
+    text-decoration: none;
+}
+.i a:hover {
+    text-decoration: underline;
+}
+
+/* Area upload */
+.u {
+    background: #f7fafc;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.u form {
+    display: inline-block;
+}
+
+/* Label upload (tombol) */
+.l.w {
+    display: inline-block;
+    background: #3182ce;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background 0.2s;
+}
+.l.w:hover {
+    background: #2b6cb0;
+}
+.l.w input[type="file"] {
+    display: none;
+}
+
+/* TABEL FILE MANAGER */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+table th,
+table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+}
+
+table thead th {
+    background: #edf2f7;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+table tbody tr:hover {
+    background: #f7fafc;
+}
+
+table td.x {
+    color: #4a5568;
+    font-size: 0.9em;
+}
+
+table td a {
+    color: #3182ce;
+    text-decoration: none;
+    margin-right: 4px;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+table td a:hover {
+    background: #ebf4ff;
+    text-decoration: none;
+}
+
+table td a.w {
+    color: #38a169;
+}
+table td a.h {
+    color: #e53e3e;
+}
+table td a.ajx {
+    /* khusus untuk link AJAX */
+}
+
+table td i.m {
+    margin-right: 6px;
+    color: #4a5568;
+}
+
+/* Footer tabel */
+table tfoot th {
+    background: #edf2f7;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+table tfoot th.et a {
+    margin-right: 12px;
+}
+
+/* FORMULIR */
+form {
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 0.95em;
+    background: #fff;
+    transition: border 0.2s;
+}
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+}
+
+textarea.o {
+    background: #2d3748;
+    color: #e2e8f0;
+    border-color: #4a5568;
+}
+
+/* Tombol */
+input[type="submit"],
+.w {
+    background: #3182ce;
+    border: none;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background 0.2s;
+}
+input[type="submit"]:hover,
+.w:hover {
+    background: #2b6cb0;
+}
+
+/* Override untuk header agar tidak terpengaruh kelas .w */
+header .q.x.w {
+    background: transparent !important;
+    padding: 0 !important;
+    color: #bdc3c7 !important;
+    border-radius: 0 !important;
+    cursor: default !important;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    color: #718096;
+    font-size: 0.9em;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+}
+
+/* NOTIFIKASI (plugin notify) */
+.notifyjs-corner {
+    /* posisi left bottom sudah diatur di JS */
+}
+.notifyjs-1 {
+    background: #38a169 !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+    padding: 12px 18px !important;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsif sederhana */
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    header { flex-direction: column; align-items: flex-start; }
+    header .q.x.w { margin-top: 5px; }
+    table th, table td { padding: 6px 8px; font-size: 0.85em; }
+    .i { font-size: 0.9em; }
+    .u { padding: 10px; }
+    input[type="text"], textarea { width: 100%; }
+}
